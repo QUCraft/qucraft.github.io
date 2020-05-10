@@ -1,1 +1,0 @@
-# qumc.github.io
