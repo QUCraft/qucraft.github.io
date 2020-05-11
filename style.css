@@ -1,0 +1,18 @@
+body {
+  background-image: url("images/dirt-bg.jpg");
+  background-repeat: repeat;
+  font-style: red;
+}
+
+@font-face { font-family: MC; src: url('fonts/mc.ttf'); } 
+
+.title, .subtitle {
+  font-size: 300%;
+  font-family: MC, sans-serif;
+}
+.title {
+  color: #e6e6e6;
+}
+.subtitle {
+  color: #cccccc;
+}
