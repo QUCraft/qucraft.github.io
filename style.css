@@ -1,18 +1,91 @@
-body {
-  background-image: url("images/dirt-bg.jpg");
-  background-repeat: repeat;
-  font-style: red;
-}
-
 @font-face { font-family: MC; src: url('fonts/mc.ttf'); } 
 
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+a {
+	color: #039be5;
+	text-decoration: none;
+}
+.full-background {
+	background-image: url("images/front-page-bg.jpg");
+	height: 100%; 
+	background-position: center;
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.top-padding {
+	padding-top:10vh;
+}
+
+.blue {
+	color: #11335d;
+}
+.yellow {
+	color: #eebd31;
+}
+.red {
+	color: #9d1939;
+}
+
 .title, .subtitle {
-  font-size: 300%;
-  font-family: MC, sans-serif;
+	font-family: MC, sans-serif;
 }
 .title {
-  color: #e6e6e6;
+	font-size: 500%;
+	margin: 15pt;
+	color: #fdfdfd;
+	text-shadow: 0px 0px 5px #000000;
 }
 .subtitle {
-  color: #cccccc;
+	font-size: 200%;
+	margin: 15pt;
+	color: #dfdfdf;
+}
+.info {
+	font-size: 150%;
+	margin: 15pt;
+	color: #fdfdfd;
+	text-shadow: 0px 0px 2px #000000;
+}
+
+.element-title {
+	color: #000000;
+}
+.element-subtitle {
+    font-size: 90%;
+	margin-top: -5pt;
+}
+
+.bottom-right {
+	position: absolute;
+	bottom: 5pt;
+	right: 5pt;
+	color: rgba(255,255,255,0.5);
+	text-shadow: 0px 0px 2px #000000;
+}
+
+.center-container {
+	display: inline-block;
+	margin: 15pt;
+}
+	
+.center-element {
+	background-color: rgba(255,255,255,0.5);
+	margin: 5pt;
+	padding: 5pt;
+	padding-left: 15pt;
+	padding-right: 15pt;
+	border-radius: 15pt;
+    -webkit-border-radius: 15pt;
+    -moz-border-radius: 15pt;
+	border: solid;
+    font-size: 150%;	
 }
