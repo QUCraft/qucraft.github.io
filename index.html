@@ -4,29 +4,129 @@
 		<meta charset="utf-8">
 		<title>QUCraft</title>
 		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="slideshow.css">
 		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
+		<script type="text/javascript" src="slideshow.js"></script>
+		<script>
+			function showHome() {
+				var homeDiv = document.getElementById("home");
+				var aboutDiv = document.getElementById("about");
+				var imagesDiv = document.getElementById("images");
+				homeDiv.style.display = "inline-block";
+				aboutDiv.style.display = "none";
+				imagesDiv.style.display = "none";
+			}
+			function showAbout() {
+				var homeDiv = document.getElementById("home");
+				var aboutDiv = document.getElementById("about");
+				homeDiv.style.display = "none";
+				aboutDiv.style.display = "inline-block";
+			}
+			function showImages() {
+				var homeDiv = document.getElementById("home");
+				var imagesDiv = document.getElementById("images");
+				homeDiv.style.display = "none";
+				imagesDiv.style.display = "inline-block";
+			}
+		</script>
 	</head>
 	<body>
 		
 		<div class="full-background" style="text-align: center;">
-		  <div class="top-padding"/>
-		  <h1 class="title"><span class="blue">Q</span><span class="yellow">U</span><span class="red">C</span>raft
-		  </h1>
-		  <h2 class="info">The Minecraft server for Queen's University students</h2>
-		  
-		  <div class="center-container">
-			  <div class="center-element">
-				  <h2 class="element-title">Join server</h3>
-				  <h4 class="element-subtitle">Head over to our <a href="#" target="_blank" rel="noopener noreferrer">Discord</a> to join!</h4>
-			  </div>
-			  <br>
-			  <div class="center-element">
-				  <h2 class="element-title">View map</h3>
-				  <h4 class="element-subtitle">Visit the <a href="#" target="_blank" rel="noopener noreferrer">online map</a> of the campus!</h4>
-			  </div>
-		  </div>
-				  
-		  <p class="bottom-right">© 2020 QUCraft. Not officially endorsed by any academic institution.</p>
+			<div class="top-padding"/>
+			<h1 class="title"><span class="blue">Q</span><span class="yellow">U</span><span class="red">C</span>raft
+			</h1>
+			<h2 class="subtitle">The Minecraft server for Queen's University students</h2>
+			
+			<div id="home" class="center-container">
+				<div class="center-element">
+					<h2 class="element-title">Join server</h3>
+					<h4 class="element-subtitle">Head over to our <a href="#" target="_blank" rel="noopener noreferrer">Discord</a> to join!</h4>
+				</div>
+				<br>
+				<div class="center-element">
+					<h2 class="element-title">View map</h3>
+					<h4 class="element-subtitle">Visit the <a href="#" target="_blank" rel="noopener noreferrer">online map</a> of the campus!</h4>
+				</div>
+				<br>
+				<div class="inline-element" style="float: left;"onclick="showImages()">
+					<h2 class="element-title"><a href="#" target="_blank" rel="noopener noreferrer"></a>Images</h3>
+				</div>
+				<div class="inline-element" style="float: right;" onclick="showAbout()">
+					<h2 class="element-title"><a href="#" target="_blank" rel="noopener noreferrer"></a>About</h3>
+				</div>
+			</div>
+			
+			<div id="about" class="center-container" style="display: none;">
+				<div class="fullwidth-element">
+					<h2 class="element-title">About</h2>
+					<p class="element-info">
+						This server (Java edition) was created with the main goal being to re-create the campus (West included) in Minecraft. It serves as a common place for past, current, and future Queen’s students to come together and enjoy the sense of community that has been abruptly taken away this spring.
+						There is a system in place where each player can specify their year and faculty that is displayed in the chat when talking to others in-game. This gives a sense of students talking to students rather than just strangers.							
+					</p>		
+					<p class="element-info">
+						The layout of the university district and surrounding area (roads, 2D building shapes, elevation, etc) was imported as a template for the campus recreation project. This makes it quite easy for new players to locate and determine the appropriate scale for the building(s) they want to build. This way everything is very close to the real campus even though it is being built by many different people.
+						Visit the <a href="#" target="_blank" rel="noopener noreferrer">online map</a> to see the current progress.
+					</p>	
+					<p class="element-info">
+						In addition to the campus recreation project, there is also a survival world for a more casual experience. Players are free to switch between these two separate worlds at any time and may choose to play in one or both of these worlds.
+					</p>
+				</div>
+				<div class="inline-element" onclick="showHome()">
+					<h2 class="element-title">Back</h3>
+				</div>
+			</div>
+
+			<div id="images" class="center-container" style="display: none;">
+				<div class="fullwidth-element">
+					<h2 class="element-title">Images</h2>
+					
+					<div class="row">
+						<div class="column">
+							<img src="images/1.png" onclick="openModal(1)" class="preview-image">
+						</div>
+						<div class="column">
+							<img src="images/2.png" onclick="openModal(2)" class="preview-image">
+						</div>
+						<div class="column">
+							<img src="images/3.png" onclick="openModal(3)" class="preview-image">
+						</div>
+						<span class="stretch"></span>						
+					</div>
+				
+					<div id="myModal" class="modal">
+						<span class="close" onclick="closeModal()">&times;</span>
+						<div class="modal-content">
+						
+							<div class="mySlides">
+								<span class="imgHelper"></span><img src="images/1.png">
+								<div class="caption-text">Grant Hall Tower</div>
+							</div>
+						
+							<div class="mySlides">
+								<span class="imgHelper"></span><img src="images/2.png">
+								<div class="caption-text">Jackson Hall</div>
+							</div>
+						
+							<div class="mySlides">
+								<span class="imgHelper"></span><img src="images/3.png">
+								<div class="caption-text">MacGillivray Brown Hall</div>
+							</div>
+						
+							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+							<a class="next" onclick="plusSlides(1)">&#10095;</a>
+						
+						</div>
+					</div>
+
+				</div>
+
+				<div class="inline-element" onclick="showHome()">
+					<h2 class="element-title">Back</h3>
+				</div>
+			</div>
+			
+			<p class="bottom-right">© 2020 QUCraft. Not officially endorsed by any academic institution.</p>
 		  
 		</div>
 
