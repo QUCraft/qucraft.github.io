@@ -77,7 +77,7 @@
 }
 .mySlides img {
     max-width: 100%;
-    max-height: 100%;
+    max-height: 90vh;
     vertical-align: middle;
     margin: 0 auto;
 }
