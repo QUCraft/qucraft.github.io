@@ -5,34 +5,14 @@
 		<title>QUCraft</title>
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="slideshow.css">
+		<link rel="stylesheet" href="bg-slideshow.css">
 		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
 		<script type="text/javascript" src="slideshow.js"></script>
-		<script>
-			function showHome() {
-				var homeDiv = document.getElementById("home");
-				var aboutDiv = document.getElementById("about");
-				var imagesDiv = document.getElementById("images");
-				homeDiv.style.display = "inline-block";
-				aboutDiv.style.display = "none";
-				imagesDiv.style.display = "none";
-			}
-			function showAbout() {
-				var homeDiv = document.getElementById("home");
-				var aboutDiv = document.getElementById("about");
-				homeDiv.style.display = "none";
-				aboutDiv.style.display = "inline-block";
-			}
-			function showImages() {
-				var homeDiv = document.getElementById("home");
-				var imagesDiv = document.getElementById("images");
-				homeDiv.style.display = "none";
-				imagesDiv.style.display = "inline-block";
-			}
-		</script>
+		<script type="text/javascript" src="navigation.js"></script>
 	</head>
 	<body>
 		
-		<div class="full-background" style="text-align: center;">
+		<div class="bg-pic-wrapper" style="text-align: center;">
 			<div class="top-padding"/>
 			<h1 class="title"><span class="blue">Q</span><span class="yellow">U</span><span class="red">C</span>raft
 			</h1>
@@ -83,13 +63,13 @@
 					
 					<div class="row">
 						<div class="column">
-							<img src="images/1.png" onclick="openModal(1)" class="preview-image">
+							<img src="images/1.jpg" onclick="openModal(1)" class="preview-image">
 						</div>
 						<div class="column">
-							<img src="images/2.png" onclick="openModal(2)" class="preview-image">
+							<img src="images/2.jpg" onclick="openModal(2)" class="preview-image">
 						</div>
 						<div class="column">
-							<img src="images/3.png" onclick="openModal(3)" class="preview-image">
+							<img src="images/3.jpg" onclick="openModal(3)" class="preview-image">
 						</div>
 						<span class="stretch"></span>						
 					</div>
@@ -99,18 +79,18 @@
 						<div class="modal-content">
 						
 							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/1.png">
-								<div class="caption-text">Grant Hall Tower</div>
+								<span class="imgHelper"></span><img src="images/1.jpg">
+								<div class="caption-text">University Avenue</div>
 							</div>
 						
 							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/2.png">
+								<span class="imgHelper"></span><img src="images/2.jpg">
 								<div class="caption-text">Jackson Hall</div>
 							</div>
 						
 							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/3.png">
-								<div class="caption-text">MacGillivray Brown Hall</div>
+								<span class="imgHelper"></span><img src="images/3.jpg">
+								<div class="caption-text">Behind Dunning Hall</div>
 							</div>
 						
 							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -127,7 +107,28 @@
 			</div>
 			
 			<p class="bottom-right">© 2020 QUCraft. Not officially endorsed by any academic institution.</p>
-		  
+		    
+			<bg-figure class="bg-pic-1" style="background-image: url(images/1.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-2" style="background-image: url(images/2.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-3" style="background-image: url(images/3.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-4" style="background-image: url(images/4.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-5" style="background-image: url(images/5.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-6" style="background-image: url(images/6.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-7" style="background-image: url(images/7.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-8" style="background-image: url(images/8.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-9" style="background-image: url(images/9.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-10" style="background-image: url(images/10.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-11" style="background-image: url(images/11.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-12" style="background-image: url(images/12.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-13" style="background-image: url(images/13.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-14" style="background-image: url(images/14.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-15" style="background-image: url(images/15.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-16" style="background-image: url(images/16.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-17" style="background-image: url(images/17.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-18" style="background-image: url(images/18.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-19" style="background-image: url(images/19.jpg);"></bg-figure>
+			<bg-figure class="bg-pic-20" style="background-image: url(images/20.jpg);"></bg-figure>
+
 		</div>
 
 	</body>
