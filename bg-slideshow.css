@@ -1,0 +1,290 @@
+.bg-pic-wrapper {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+bg-figure {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  z-index: -1;
+  /* Animation */
+  animation: bg-slideshow 200s linear infinite 0s;
+  -o-animation: bg-slideshow 200s linear infinite 0s;
+  -moz-animation: bg-slideshow 200s linear infinite 0s;
+  -webkit-animation: bg-slideshow 200s linear infinite 0s;
+}
+
+.bg-pic-1 {
+  opacity: 1;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-2 {
+  animation-delay: 10s;
+  -o-animation-delay: 10s;
+  -moz--animation-delay: 10s;
+  -webkit-animation-delay: 10s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-3 {
+  animation-delay: 20s;
+  -o-animation-delay: 20s;
+  -moz--animation-delay: 20s;
+  -webkit-animation-delay: 20s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-4 {
+  animation-delay: 30s;
+  -o-animation-delay: 30s;
+  -moz--animation-delay: 30s;
+  -webkit-animation-delay: 30s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-5 {
+  animation-delay: 40s;
+  -o-animation-delay: 40s;
+  -moz--animation-delay: 40s;
+  -webkit-animation-delay: 40s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-6 {
+  animation-delay: 50s;
+  -o-animation-delay: 50s;
+  -moz--animation-delay: 50s;
+  -webkit-animation-delay: 50s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-7 {
+  animation-delay: 60s;
+  -o-animation-delay: 60s;
+  -moz--animation-delay: 60s;
+  -webkit-animation-delay: 60s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-8 {
+  animation-delay: 70s;
+  -o-animation-delay: 70s;
+  -moz--animation-delay: 70s;
+  -webkit-animation-delay: 70s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-9 {
+  animation-delay: 80s;
+  -o-animation-delay: 80s;
+  -moz--animation-delay: 80s;
+  -webkit-animation-delay: 80s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-10 {
+  animation-delay: 90s;
+  -o-animation-delay: 90s;
+  -moz--animation-delay: 90s;
+  -webkit-animation-delay: 90s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-11 {
+  animation-delay: 100s;
+  -o-animation-delay: 100s;
+  -moz--animation-delay: 100s;
+  -webkit-animation-delay: 100s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-12 {
+  animation-delay: 110s;
+  -o-animation-delay: 110s;
+  -moz--animation-delay: 110s;
+  -webkit-animation-delay: 110s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-13 {
+  animation-delay: 120s;
+  -o-animation-delay: 120s;
+  -moz--animation-delay: 120s;
+  -webkit-animation-delay: 120s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-14 {
+  animation-delay: 130s;
+  -o-animation-delay: 130s;
+  -moz--animation-delay: 130s;
+  -webkit-animation-delay: 130s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-15 {
+  animation-delay: 140s;
+  -o-animation-delay: 140s;
+  -moz--animation-delay: 140s;
+  -webkit-animation-delay: 140s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-16 {
+  animation-delay: 150s;
+  -o-animation-delay: 150s;
+  -moz--animation-delay: 150s;
+  -webkit-animation-delay: 150s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-17 {
+  animation-delay: 160s;
+  -o-animation-delay: 160s;
+  -moz--animation-delay: 160s;
+  -webkit-animation-delay: 160s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-18 {
+  animation-delay: 170s;
+  -o-animation-delay: 170s;
+  -moz--animation-delay: 170s;
+  -webkit-animation-delay: 170s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-19 {
+  animation-delay: 180s;
+  -o-animation-delay: 180s;
+  -moz--animation-delay: 180s;
+  -webkit-animation-delay: 180s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+.bg-pic-20 {
+  animation-delay: 190s;
+  -o-animation-delay: 190s;
+  -moz--animation-delay: 190s;
+  -webkit-animation-delay: 190s;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: center;
+  background-size: cover;
+}
+
+/* Keyframes*/
+@keyframes bg-slideshow {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -ms-transform: scale(1);
+  }
+  0.5% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 1;
+  }
+  5.5% {
+    opacity: 0;
+    -webkit-transform: scale(1.15);
+            transform: scale(1.15);
+    -ms-transform: scale(1.15);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+            transform: scale(1);
+    -ms-transformm: scale(1);
+  }
+}
+@-webkit-keyframes bg-slideshow {
+  0% {
+    opacity: 0;
+    -webkit-transform: scale(1);
+  }
+  0.5% {
+    opacity: 1;
+  }
+  5% {
+    opacity: 1;
+  }
+  5.5% {
+    opacity: 0;
+    -webkit-transform: scale(1.15);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transformm: scale(1);
+  }
+}
