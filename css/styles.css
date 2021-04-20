@@ -1,0 +1,46 @@
+@font-face { font-family: MC; src: url('fonts/mc.ttf'); } 
+
+/* QUCraft Custom CSS
+
+Copyright 2021 Alex McKinnon & QUCraft Club
+ */
+
+/* Body */
+
+body, html {
+	height: 100%;
+	margin: 0;
+	font-family: sans-serif;
+}
+
+/* Colours */
+.blue {
+	color: #11335d;
+}
+.yellow {
+	color: #eebd31;
+}
+.red {
+	color: #9d1939;
+}
+
+/* Titling */
+
+.qu-title, .qu-subtitle {
+	font-family: MC, sans-serif;
+}
+
+.qu-title { 
+	font-size: 500%;
+	margin: 15pt;
+	color: #fdfdfd;
+	text-shadow: 0px 0px 5px #000000;
+}
+
+.qu-subtitle {
+	font-size: 140%;
+	margin: 15pt;
+	margin-top: -5pt;
+	color: #fdfdfd;
+	text-shadow: 0px 0px 2px #000000;
+}

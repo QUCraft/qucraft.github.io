@@ -2,461 +2,51 @@
 <html lang=en>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		
 		<title>QUCraft</title>
-		<link rel="stylesheet" href="style.css">
-		<link rel="stylesheet" href="slideshow.css">
-		<link rel="stylesheet" href="bg-slideshow.css">
 		<link rel="shortcut icon" type="image/png" href="favicon.png"/>
-		<script type="text/javascript" src="slideshow.js"></script>
-		<script type="text/javascript" src="navigation.js"></script>
+
+		<!-- UIKit -->
+		<link rel="stylesheet" href="lib/uikit-3.6.18/css/uikit.min.css" />
+
+		<!-- UIkit JS -->
+		<script src="lib/uikit-3.6.18/js/uikit.min.js"></script>
+		<script src="lib/uikit-3.6.18/js/uikit-icons.min.js"></script>
+		<noscript>Please enable JavaScript to view this site.</noscript>
 	</head>
 	<body>
 		
-		<div class="bg-pic-wrapper" style="text-align: center;">
-			<div class="top-padding"/>
-			<h1 class="title"><span class="blue">Q</span><span class="yellow">U</span><span class="red">C</span>raft
-			</h1>
-			<h2 class="subtitle">The Minecraft server for Queen's University students</h2>
-			
-			<div id="home" class="center-container">
-				<div class="center-element">
-					<h2 class="element-title">Join server</h3>
-					<h4 class="element-subtitle">Head over to our <a href="https://discord.gg/ZffVn7k" target="_blank" rel="noopener noreferrer">Discord</a> to join!</h4>
-				</div>
-				<br>
-				<div class="center-element">
-					<h2 class="element-title">View map</h3>
-					<h4 class="element-subtitle" style="margin-bottom: 15px;">Visit the <a href="https://map.qucraft.me" target="_blank" rel="noopener noreferrer">online map</a> of the campus!</h4>
-					<h4 class="element-subtitle">Check out the new <a target="_blank" rel="noopener noreferrer" href="https://bluemap.qucraft.me">3D map</a> as well!</h4>
-				</div>
-				<br>
-				<div class="inline-element" style="float: left;"onclick="showImages()">
-					<h2 class="element-title">Images</h3>
-				</div>
-				<div class="inline-element" style="float: right;" onclick="showAbout()">
-					<h2 class="element-title">About</h3>
-				</div>
-				<h2 class="element-title" style="margin-top: 90pt;">Contact: <a href="mailto:qucraft.team@gmail.com">qucraft.team@gmail.com</a></h3>
-				<h2 class="element-title">Instagram: <a href="https://www.instagram.com/qucraft.team/">@qucraft.team</a></h3>
-			</div>
-			
-			<div id="about" class="center-container" style="display: none;">
-				<div class="fullwidth-element">
-					<h2 class="element-title">About</h2>
-					<p class="element-info">
-						This server (Java edition) was created with the main goal being to re-create the campus (West included) in Minecraft. It serves as a common place for past, current, and future Queen’s students to come together and enjoy the sense of community that has been abruptly taken away this spring.
-						There is a system in place where each player can specify their year and faculty that is displayed in the chat when talking to others in-game. This gives a sense of students talking to students rather than just strangers.					
-					</p>		
-					<p class="element-info">
-						The layout of the university district and surrounding area (roads, 2D building shapes, elevation, etc) was imported as a template for the campus recreation project. This makes it quite easy for new players to locate and determine the appropriate scale for the building(s) they want to build. This way everything is very close to the real campus even though it is being built by many different people.
-						Visit the <a href="https://map.qucraft.me" target="_blank" rel="noopener noreferrer">online map</a> to see the current progress.
-					</p>	
-					<p class="element-info">
-						In addition to the campus recreation project, there is also a survival world for a more casual experience. Players are free to switch between these two separate worlds at any time and may choose to play in one or both of these worlds.
-					</p>
-				</div>
-				<div class="inline-element" onclick="showHome()">
-					<h2 class="element-title">Back</h3>
-				</div>
-			</div>
 
-			<div id="images" class="center-container" style="display: none;">
-				<div class="fullwidth-element">
-					<h2 class="element-title">Images</h2>
-					
-					<div class="row">
-						<div class="column">
-							<img src="images/preview/1.jpg" onclick="openModal(1)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/2.jpg" onclick="openModal(2)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/3.jpg" onclick="openModal(3)" class="preview-image">
-						</div>
-						<span class="stretch"></span>						
-					</div>
-					<div class="row">
-						<div class="column">
-							<img src="images/preview/4.jpg" onclick="openModal(4)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/5.jpg" onclick="openModal(5)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/6.jpg" onclick="openModal(6)" class="preview-image">
-						</div>
-						<span class="stretch"></span>						
-					</div>
-					<div class="row">
-						<div class="column">
-							<img src="images/preview/7.jpg" onclick="openModal(7)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/8.jpg" onclick="openModal(8)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/9.jpg" onclick="openModal(9)" class="preview-image">
-						</div>
-						<span class="stretch"></span>						
-					</div>
-					<div class="row">
-						<div class="column">
-							<img src="images/preview/10.jpg" onclick="openModal(10)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/11.jpg" onclick="openModal(11)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/12.jpg" onclick="openModal(12)" class="preview-image">
-						</div>
-						<span class="stretch"></span>						
-					</div>
-					<div class="row">
-						<div class="column">
-							<img src="images/preview/13.jpg" onclick="openModal(13)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/14.jpg" onclick="openModal(14)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/15.jpg" onclick="openModal(15)" class="preview-image">
-						</div>
-						<span class="stretch"></span>						
-					</div>
-					<div class="row">
-						<div class="column">
-							<img src="images/preview/16.jpg" onclick="openModal(16)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/17.jpg" onclick="openModal(17)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/18.jpg" onclick="openModal(18)" class="preview-image">
-						</div>
-						<span class="stretch"></span>						
-					</div>
-					<div class="row">
-						<div class="column">
-							<img src="images/preview/19.jpg" onclick="openModal(19)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/20.jpg" onclick="openModal(20)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/21.jpg" onclick="openModal(21)" class="preview-image">
-						</div>
-						<span class="stretch"></span>						
-					</div>
-					<div class="row">
-						<div class="column">
-							<img src="images/preview/22.jpg" onclick="openModal(22)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/23.jpg" onclick="openModal(23)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/24.jpg" onclick="openModal(24)" class="preview-image">
-						</div>
-						<span class="stretch"></span>						
-					</div>
-					<div class="row">
-						<div class="column">
-							<img src="images/preview/25.jpg" onclick="openModal(25)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/26.jpg" onclick="openModal(26)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/27.jpg" onclick="openModal(27)" class="preview-image">
-						</div>
-						<span class="stretch"></span>						
-					</div>
-					<div class="row">
-						<div class="column">
-							<img src="images/preview/28.jpg" onclick="openModal(28)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/29.jpg" onclick="openModal(29)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/30.jpg" onclick="openModal(30)" class="preview-image">
-						</div>
-						<span class="stretch"></span>						
-					</div>
-					<div class="row">
-						<div class="column">
-							<img src="images/preview/31.jpg" onclick="openModal(31)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/32.jpg" onclick="openModal(32)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/33.jpg" onclick="openModal(33)" class="preview-image">
-						</div>
-						<span class="stretch"></span>						
-					</div>
-					<div class="row">
-						<div class="column">
-							<img src="images/preview/34.jpg" onclick="openModal(34)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/35.jpg" onclick="openModal(35)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/36.jpg" onclick="openModal(36)" class="preview-image">
-						</div>
-						<span class="stretch"></span>						
-					</div>
-					<div class="row">
-						<div class="column">
-							<img src="images/preview/s1.jpg" onclick="openModal(37)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/s2.jpg" onclick="openModal(38)" class="preview-image">
-						</div>
-						<div class="column">
-							<img src="images/preview/s3.jpg" onclick="openModal(39)" class="preview-image">
-						</div>
-						<span class="stretch"></span>			
-					</div>
-				
-					<div id="myModal" class="modal">
-						<span class="close" onclick="closeModal()">&times;</span>
-						<div class="modal-content">
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/1.jpg">
-								<div class="caption-text">University Avenue</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/2.jpg">
-								<div class="caption-text">Jackson Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/3.jpg">
-								<div class="caption-text">Behind Dunning Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/4.jpg">
-								<div class="caption-text">Nicol Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/5.jpg">
-								<div class="caption-text">Ontario Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/6.jpg">
-								<div class="caption-text">Theological Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/7.jpg">
-								<div class="caption-text">Ellis Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/8.jpg">
-								<div class="caption-text">Harrison LeCaine Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/9.jpg">
-								<div class="caption-text">Agnes Etherington Art Centre</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/10.jpg">
-								<div class="caption-text">Chown Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/11.jpg">
-								<div class="caption-text">Mackintosh-Corry Hall pathway</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/12.jpg">
-								<div class="caption-text">Jeffrey Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/13.jpg">
-								<div class="caption-text">Miller Hall Museum</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/14.jpg">
-								<div class="caption-text">Chernoff Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/15.jpg">
-								<div class="caption-text">MacGillivray Brown Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/16.jpg">
-								<div class="caption-text">Leggett Hall Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/17.jpg">
-								<div class="caption-text">Leggett Hall Hall interior</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/18.jpg">
-								<div class="caption-text">Stirling Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/19.jpg">
-								<div class="caption-text">Robert Sutherland Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/20.jpg">
-								<div class="caption-text">Sir John A. MacDonald Hall</div>
-							</div>
-							
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/21.jpg">
-								<div class="caption-text">Clark Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/22.jpg">
-								<div class="caption-text">Rideau Building</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/23.jpg">
-								<div class="caption-text">Brant House</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/24.jpg">
-								<div class="caption-text">McNeill House</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/25.jpg">
-								<div class="caption-text">McNeill House Interior</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/26.jpg">
-								<div class="caption-text">Art Centre Extension</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/27.jpg">
-								<div class="caption-text">Grant Hall Tower</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/28.jpg">
-								<div class="caption-text">Grant Hall Tower interior</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/29.jpg">
-								<div class="caption-text">Mackintosh-Corry Hall entrance</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/30.jpg">
-								<div class="caption-text">Dunning Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/31.jpg">
-								<div class="caption-text">Douglas Library</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/32.jpg">
-								<div class="caption-text">Gordon Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/33.jpg">
-								<div class="caption-text">Union & Division St. food truck</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/34.jpg">
-								<div class="caption-text">Outside of Victoria Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/35.jpg">
-								<div class="caption-text">Harrison LeCaine Hall</div>
-							</div>
-						
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/36.jpg">
-								<div class="caption-text">University Club</div>
-							</div>
-							
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/s1.jpg">
-								<div class="caption-text">Survival world spawn</div>
-							</div>
-							
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/s2.jpg">
-								<div class="caption-text">Epic base close to spawn</div>
-							</div>
-							
-							<div class="mySlides">
-								<span class="imgHelper"></span><img src="images/s3.jpg">
-								<div class="caption-text">Island lighthouse by Dadijo</div>
-							</div>
-						
-							<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-							<a class="next" onclick="plusSlides(1)">&#10095;</a>
-						
-						</div>
-					</div>
+		<!-- CMS -->
+		<div id="cms"></div>
 
-				</div>
 
-				<div class="inline-element" onclick="showHome()">
-					<h2 class="element-title">Back</h3>
-				</div>
-			</div>
-			
-			<p class="bottom-right">© 2020-2021 QUCraft.</p>
-		    
-			<bg-figure class="bg-pic-1" style="background-image: url(images/1.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-2" style="background-image: url(images/2.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-3" style="background-image: url(images/3.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-4" style="background-image: url(images/4.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-5" style="background-image: url(images/5.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-6" style="background-image: url(images/6.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-7" style="background-image: url(images/7.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-8" style="background-image: url(images/8.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-9" style="background-image: url(images/9.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-10" style="background-image: url(images/10.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-11" style="background-image: url(images/11.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-12" style="background-image: url(images/12.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-13" style="background-image: url(images/13.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-14" style="background-image: url(images/14.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-15" style="background-image: url(images/15.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-16" style="background-image: url(images/16.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-17" style="background-image: url(images/17.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-18" style="background-image: url(images/18.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-19" style="background-image: url(images/19.jpg);"></bg-figure>
-			<bg-figure class="bg-pic-20" style="background-image: url(images/s1.jpg);"></bg-figure>
+		<!-- <h1 class="qu-title"><span class="blue">Q</span><span class="yellow">U</span><span class="red">C</span>raft
+		</h1>
+		<h2 class="qu-subtitle">The Minecraft server for Queen's University students</h2>
+		<p>
+		
 
-		</div>
+		<h2 class="uk-tile-default">About</h2>
+		<p>
+			This server (Java edition) was created with the main goal being to re-create the campus (West included) in Minecraft. It serves as a common place for past, current, and future Queen’s students to come together and enjoy the sense of community that has been abruptly taken away this spring.
+			There is a system in place where each player can specify their year and faculty that is displayed in the chat when talking to others in-game. This gives a sense of students talking to students rather than just strangers.					
+		</p>		
+		<p>
+			The layout of the university district and surrounding area (roads, 2D building shapes, elevation, etc) was imported as a template for the campus recreation project. This makes it quite easy for new players to locate and determine the appropriate scale for the building(s) they want to build. This way everything is very close to the real campus even though it is being built by many different people.
+			Visit the <a href="https://map.qucraft.me" target="_blank" rel="noopener noreferrer">online map</a> to see the current progress.
+		</p>	
+		<p >
+			In addition to the campus recreation project, there is also a survival world for a more casual experience. Players are free to switch between these two separate worlds at any time and may choose to play in one or both of these worlds.
+		</p>
+		
+		<p class="bottom-right">© 2020-2021 Alex McKinnon.</p> -->
+		<!-- CMS.js -->
+		<script src="./libcms-js/js/cms.js"></script>
+		<!-- Config -->
+		<script src="./libcms-js/js/config.js"></script>
 
 	</body>
 </html>
