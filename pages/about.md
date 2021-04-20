@@ -2,6 +2,12 @@
 title: About
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi tincidunt ornare massa eget egestas purus viverra. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Potenti nullam ac tortor vitae. Vitae sapien pellentesque habitant morbi tristique. Aliquam sem et tortor consequat id porta nibh venenatis cras. Integer vitae justo eget magna fermentum iaculis eu. Ut enim blandit volutpat maecenas volutpat blandit aliquam etiam. Mattis enim ut tellus elementum sagittis. Adipiscing enim eu turpis egestas pretium aenean pharetra magna. Ullamcorper malesuada proin libero nunc consequat interdum varius. Pellentesque id nibh tortor id aliquet lectus proin nibh nisl. Est ullamcorper eget nulla facilisi etiam dignissim diam quis enim. Eget nunc scelerisque viverra mauris in aliquam sem fringilla. Vitae tempus quam pellentesque nec nam aliquam sem et tortor.
+This server (Java edition) was created with the main goal being to re-create the campus (West included) in Minecraft. It serves as a common place for past, current, and future Queen’s students to come together and enjoy the sense of community that has been abruptly taken away this spring.
 
-Tellus molestie nunc non blandit massa. Porttitor leo a diam sollicitudin. Malesuada pellentesque elit eget gravida cum sociis natoque. Ultricies leo integer malesuada nunc vel risus commodo viverra. Amet porttitor eget dolor morbi non arcu. Bibendum arcu vitae elementum curabitur vitae nunc. Ut sem nulla pharetra diam sit amet. Ac feugiat sed lectus vestibulum mattis ullamcorper. Eu volutpat odio facilisis mauris sit amet massa vitae. Semper eget duis at tellus at urna condimentum mattis pellentesque. Tincidunt dui ut ornare lectus sit amet. Sed augue lacus viverra vitae congue eu. Nisi lacus sed viverra tellus. Sed id semper risus in. Urna nunc id cursus metus aliquam.
+There is a system in place where each player can specify their year and faculty that is displayed in the chat when talking to others in-game. This gives a sense of students talking to students rather than just strangers.    
+
+The layout of the university district and surrounding area (roads, 2D building shapes, elevation, etc) was imported as a template for the campus recreation project. This makes it quite easy for new players to locate and determine the appropriate scale for the building(s) they want to build. This way everything is very close to the real campus even though it is being built by many different people.
+
+---
+
+In addition to the campus recreation project, there is also a survival world for a more casual experience. Players are free to switch between these two separate worlds at any time and may choose to play in one or both of these worlds.
