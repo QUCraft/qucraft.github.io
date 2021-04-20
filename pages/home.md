@@ -1,6 +1,6 @@
-<!-- ---
+---
 title: Home
---- -->
+---
 
 # Join the server 
 Head on over to our ![Discord](https://discord.gg/ZffVn7k) Server!
